@@ -16,6 +16,7 @@
 		226144EE250D04CE007D9AAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226144EC250D04CE007D9AAB /* Main.storyboard */; };
 		226144F0250D04D2007D9AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226144EF250D04D2007D9AAB /* Assets.xcassets */; };
 		226144F3250D04D2007D9AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226144F1250D04D2007D9AAB /* LaunchScreen.storyboard */; };
+		226144F9250D07FD007D9AAB /* ccstringextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226144F8250D07FD007D9AAB /* ccstringextension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		226144EF250D04D2007D9AAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		226144F2250D04D2007D9AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		226144F4250D04D2007D9AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226144F8250D07FD007D9AAB /* ccstringextension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ccstringextension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				226144C9250D041C007D9AAB /* ccextension.h */,
 				226144CA250D041C007D9AAB /* Info.plist */,
+				226144F8250D07FD007D9AAB /* ccstringextension.swift */,
 			);
 			path = ccextension;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					226144C5250D041C007D9AAB = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					226144CE250D041D007D9AAB = {
 						CreatedOnToolsVersion = 11.4;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226144F9250D07FD007D9AAB /* ccstringextension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		226144DB250D041D007D9AAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cypcap.ccextension.ccextension;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		226144DC250D041D007D9AAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -483,6 +491,7 @@
 		226144DE250D041D007D9AAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ccextensionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +509,7 @@
 		226144DF250D041D007D9AAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ccextensionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
